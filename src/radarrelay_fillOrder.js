@@ -58,7 +58,7 @@ async function fillOrder(mnemonic, clientUrl, relayerApiUrl, baseTokenAddress, q
  * @param ethAmount how much eth you want to exchange
  * @returns {Promise<string>}
  */
-async function echangeWETH(mnemonic, clientUrl, wethTokenAddress, ethAmount, networkId) {
+async function exchangeWETH(mnemonic, clientUrl, wethTokenAddress, ethAmount, networkId) {
     return new Promise(async function (resolve, reject) {
         try {
             let provider = new HDWalletProvider(mnemonic, clientUrl);
@@ -87,5 +87,5 @@ async function echangeWETH(mnemonic, clientUrl, wethTokenAddress, ethAmount, net
 
 module.exports = {
     fillOrder,
-    echangeWETH
+    exchangeWETH
 }
