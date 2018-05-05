@@ -1,6 +1,6 @@
 {
   "name": "0x_exchange",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "0x_exchange",
   "main": "index.js",
   "author": {
