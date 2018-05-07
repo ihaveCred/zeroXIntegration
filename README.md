@@ -72,4 +72,19 @@ async function test(){
 
 ```
 
+submitDdexOrder
+
+```
+let privateKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+
+async function test() {
+    try {
+        let orderId = await require("0x_exchange").submitDdexOrder(privateKey,5,0.0013184,"buy","DAI-ETH");
+        console.info(orderId);
+    }catch (e){
+        console.error(e);
+    }
+}
+
+```
 
