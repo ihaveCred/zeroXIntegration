@@ -13,7 +13,7 @@ let wethContractAddress = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
 let relayerApiUrl = "https://api.radarrelay.com/0x/v0/";
 let WETH_ADDRESS = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
 let DAI_ADDRESS = "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359";
-let clientUrl = "https://mainnet.infura.io/yXDUNwlNOcx0UJCWjzNr";
+let clientUrl = "https://mainnet.infura.io/xxxxxxxxxxxxxxxxxxxxxx";
 
 async function test(){
     try{
@@ -34,7 +34,7 @@ let wethContractAddress = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
 let relayerApiUrl = "https://api.radarrelay.com/0x/v0/";
 let WETH_ADDRESS = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
 let DAI_ADDRESS = "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359";
-let clientUrl = "https://mainnet.infura.io/yXDUNwlNOcx0UJCWjzNr";
+let clientUrl = "https://mainnet.infura.io/xxxxxxxxxxxxxxxxxxxxxx";
 
 async function test(){
     try{
@@ -57,7 +57,7 @@ let wethContractAddress = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
 let relayerApiUrl = "https://api.radarrelay.com/0x/v0/";
 let WETH_ADDRESS = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
 let DAI_ADDRESS = "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359";
-let clientUrl = "https://mainnet.infura.io/yXDUNwlNOcx0UJCWjzNr";
+let clientUrl = "https://mainnet.infura.io/xxxxxxxxxxxxxxxxxxxxxx";
 
 async function test(){
     try{
@@ -72,4 +72,19 @@ async function test(){
 
 ```
 
+submitDdexOrder
+
+```
+let privateKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+
+async function test() {
+    try {
+        let orderId = await require("0x_exchange").submitDdexOrder(privateKey,5,0.0013184,"buy","DAI-ETH");
+        console.info(orderId);
+    }catch (e){
+        console.error(e);
+    }
+}
+
+```
 
